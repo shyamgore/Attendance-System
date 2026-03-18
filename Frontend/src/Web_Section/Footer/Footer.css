@@ -1,0 +1,39 @@
+.footer{
+  background:#D8C3A5;
+  padding:50px 120px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContainer{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+}
+
+.footer h2{
+  color:#E85A4F;
+}
+
+.footer h3{
+  margin-bottom:10px;
+}
+
+.footer p{
+  color:#555;
+  margin:6px 0;
+}
+
+.footerLinks p:hover{
+  color:#E85A4F;
+  cursor:pointer;
+}
+
+.footerBottom{
+  text-align:center;
+  margin-top:30px;
+  padding-top:15px;
+  border-top:1px solid rgba(0,0,0,0.1);
+  color:#8E8D8A;
+}

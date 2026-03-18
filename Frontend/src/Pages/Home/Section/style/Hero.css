@@ -1,0 +1,40 @@
+.hero{
+  width:100%;
+  min-height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:60px 80px;
+  background:#EAE7DC;
+  color:#333;
+}
+
+.hero .Headings{
+  flex:1.618;
+}
+
+.hero .Headings h1{
+  font-size:4em;
+  margin-bottom:20px;
+  color:#E85A4F;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.hero .Headings h2{
+  font-size:25px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:#8E8D8A;
+}
+
+.hero .image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero .image img{
+  width:420px;
+  max-width:100%;
+}

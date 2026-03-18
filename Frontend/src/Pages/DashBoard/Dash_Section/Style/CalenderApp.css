@@ -1,0 +1,41 @@
+.Calender {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #EAE7DC;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.Calender table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.Calender thead{
+    border-radius: 50%;
+}
+
+.Calender th {
+  padding: 12px;
+  font-weight: 600;
+  color: #E85A4F;
+  border-bottom: 2px solid #D8C3A5;
+}
+
+.Calender td {
+  padding: 18px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Calender td:hover {
+  background: #E98074;
+  color: white;
+  transform: scale(1.05);
+}

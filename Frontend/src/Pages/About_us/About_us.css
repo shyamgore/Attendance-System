@@ -1,0 +1,34 @@
+/* TEAM SECTION */
+
+.team{
+  display:flex;
+  gap:20px;
+  margin-top:15px;
+}
+
+/* MEMBER CARD */
+
+.member{
+  flex:1;
+  background:#EAE7DC;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  border:1px solid #c9b89a;
+  transition:0.3s;
+}
+
+.member:hover{
+  transform:translateY(-5px);
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.member h3{
+  color:#E85A4F;
+  margin-bottom:5px;
+}
+
+.member p{
+  color:#8E8D8A;
+  font-size:14px;
+}

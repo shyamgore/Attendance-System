@@ -1,0 +1,36 @@
+/* ===== FONT FACE ===== */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Black.woff2') format('woff2');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('../fonts/AppleGaramond.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Impact';
+    src: url('../fonts/Impact.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Akira';
+    src: url('../fonts/AkiraExpanded.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Integral';
+    src: url('../fonts/Integral.woff2') format('woff2');
+}
+
+@import "tailwindcss";
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   background-color: #EAE7DC;
+   color: rgb(48, 48, 48);
+   height: 100%;
+   font-family: 'Inter', sans-serif;
+}
