@@ -2,3 +2,56 @@ node_modules/
 .env
 build/
 dist/
+
+# -----------------------------
+# OS / Editor
+# -----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+
+# -----------------------------
+# Frontend (React / Vite / Node)
+# -----------------------------
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+Frontend/.env
+Frontend/.env.*
+Frontend/.vite/
+
+# -----------------------------
+# Backend (Spring Boot / Maven)
+# -----------------------------
+Backend/target/
+Backend/.mvn/wrapper/maven-wrapper.jar
+Backend/.env
+Backend/.env.*
+Backend/*.log
+
+# -----------------------------
+# Java compiled files
+# -----------------------------
+*.class
+
+# -----------------------------
+# Temporary files
+# -----------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -----------------------------
+# Package lock files (optional)
+# Keep package-lock.json if you want reproducible installs
+# Remove the next line if you want to track it
+# -----------------------------
+# Frontend/package-lock.json
