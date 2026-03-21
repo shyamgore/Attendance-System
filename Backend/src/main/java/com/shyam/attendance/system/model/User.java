@@ -11,14 +11,20 @@ public class User {
     private Long id;
 
     private String username;
+    private String name;
+    private String identifier;
+    private String role;
     private String password;
 
     public User() {
     }
 
-    public User(Long id, String username, String password) {
+    public User(Long id, String username, String name, String identifier, String role, String password) {
         this.id = id;
         this.username = username;
+        this.name = name;
+        this.identifier = identifier;
+        this.role = role;
         this.password = password;
     }
 
@@ -36,6 +42,30 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(String identifier) {
+        this.identifier = identifier;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getPassword() {

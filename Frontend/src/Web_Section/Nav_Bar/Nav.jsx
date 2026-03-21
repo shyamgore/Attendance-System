@@ -4,6 +4,8 @@ import Button from "../../Micro_Compo/Button.jsx";
 import { Link } from "react-router-dom";
 
 const Nav = (Prop) => {
+
+ 
   return (
     <>
       <div className="Nav">
@@ -32,6 +34,7 @@ const Nav = (Prop) => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };

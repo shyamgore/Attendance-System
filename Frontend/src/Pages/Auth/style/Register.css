@@ -1,0 +1,136 @@
+.register_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAE7DC;
+}
+
+.register_container {
+  width: 900px;
+  height: 650px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #D8C3A5;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.register_left_side {
+  width: 40%;
+  background: #EAE7DC;
+  /* background: #3b5b8a; */
+  color: #333;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register_Headings h1 {
+  font-size: 34px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #E85A4F;
+}
+
+.register_Headings p {
+  font-size: 14px;
+  color: #8E8D8A;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.register_Inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register_Inputs input,
+.register_Inputs select {
+  padding: 12px;
+  border: 1px solid #8E8D8A;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+.register_Inputs input:focus,
+.register_Inputs select:focus {
+  border: 1px solid #E85A4F;
+}
+
+.register_Inputs button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #E85A4F;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register_Inputs button:hover {
+  background: #E98074;
+}
+
+.register-message {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: #E85A4F;
+  font-weight: 600;
+}
+
+.login_link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login_link p {
+  color: #5f6f81;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login_link a {
+  text-decoration: none;
+  color: #3b5b8a;
+  font-weight: 700;
+}
+
+.login_link a:hover {
+  text-decoration: underline;
+}
+
+.register_Right_side {
+  width: 60%;
+  background: #D8C3A5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.register_Heading h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.register_Heading p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #85837d;
+  font-weight: 700;
+}
+
+.register_image img {
+  margin-top: 30px;
+  width: 310px;
+}

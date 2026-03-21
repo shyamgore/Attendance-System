@@ -18,6 +18,7 @@ public class Attendance {
     private String subject;
     private LocalDate date;
     private String status;
-    private String Rolle;
+    private String Roll;
+    private String photoUrl;
 
 }

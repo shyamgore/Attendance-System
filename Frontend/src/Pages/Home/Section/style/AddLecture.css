@@ -1,0 +1,71 @@
+.addLecture_main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAE7DC;
+}
+
+.addLecture_container {
+  width: 420px;
+  background: #EAE7DC;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.addLecture_container h1 {
+  font-size: 32px;
+  color: #E85A4F;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.addLecture_container p {
+  text-align: center;
+  color: #8E8D8A;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.addLecture_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addLecture_container input,
+.addLecture_container select {
+  padding: 12px;
+  border: 1px solid #8E8D8A;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+.addLecture_container input:focus,
+.addLecture_container select:focus {
+  border: 1px solid #E85A4F;
+}
+
+.addLecture_container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #E85A4F;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addLecture_container button:hover {
+  background: #E98074;
+}
+
+.addLecture_message {
+  text-align: center;
+  color: #E85A4F;
+  font-weight: 600;
+  margin-top: 8px;
+}

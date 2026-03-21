@@ -17,7 +17,8 @@ public class Authcontroller {
 
     @PostMapping("/register")
     public String register(@RequestBody User user) {
-        if (user == null || user.getUsername() == null || user.getPassword() == null) {
+        if (user == null || user.getUsername() == null || user.getPassword() == null || user.getIdentifier() == null ||
+                user.getRole() == null) {
             return "Invalid Data";
         }
 
@@ -32,7 +33,7 @@ public class Authcontroller {
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody User user) {
+    public Object login(@RequestBody User user) {
         if (user == null || user.getUsername() == null || user.getPassword() == null) {
             return "Invalid Data";
         }
@@ -43,8 +44,16 @@ public class Authcontroller {
             return "User Not Found";
         }
 
-        if (existingUser.get().getPassword().equals(user.getPassword())) {
-            return "Login Successful";
+        User foundUser = existingUser.get();
+
+        if (foundUser.getPassword().equals(user.getPassword())) {
+            return java.util.Map.of(
+                    "message", "Login Successful",
+                    "id", foundUser.getId(),
+                    "username", foundUser.getUsername(),
+                    "name", foundUser.getName(),
+                    "identifier", foundUser.getIdentifier(),
+                    "role", foundUser.getRole());
         }
 
         return "Wrong Password";
