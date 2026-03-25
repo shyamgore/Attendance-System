@@ -10,7 +10,7 @@ const Project_Datails = () => {
         Smart Attendance System
       </h1>
 
-      <div className="grid">
+      <div className="gridp">
 
         <div className="card big">
           <h2>Abstract</h2>

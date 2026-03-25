@@ -3,6 +3,7 @@ package com.shyam.attendance.system.controller;
 import com.shyam.attendance.system.model.Attendance;
 import com.shyam.attendance.system.repository.AttendanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,11 +18,21 @@ public class AttendanceController {
     private AttendanceRepository repository;
 
     @PostMapping
-    public Attendance addAttendance(@RequestBody Attendance attendance) {
+    public ResponseEntity<?> addAttendance(@RequestBody Attendance attendance) {
         if (attendance == null) {
-            throw new RuntimeException("Attendance data is missing");
+            return ResponseEntity.badRequest().body("Attendance data is missing");
         }
-        return repository.save(attendance);
+
+        if (repository.findByRollAndSubjectAndDate(
+                attendance.getRoll(),
+                attendance.getSubject(),
+                attendance.getDate()
+        ).isPresent()) {
+            return ResponseEntity.status(409).body("Attendance already marked for today");
+        }
+
+        Attendance savedAttendance = repository.save(attendance);
+        return ResponseEntity.ok(savedAttendance);
     }
 
     @GetMapping
